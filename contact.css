@@ -1,0 +1,349 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fff;
+}
+/*---------navbar start---------*/
+
+.navbar{
+    width: 100%;
+    height: 30px;
+    position: fixed;
+   
+}
+.navbar .nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   background-color: white;
+    padding: 15px;
+    z-index: 1;
+}
+.nav .logo{
+    cursor: pointer;
+}
+.nav .logo h2{
+    font-family: 'Satisfy', cursive;
+   text-transform: uppercase;
+    color: rgb(8, 36, 36);
+}
+.nav .logo h2::after{
+    content: '.';
+    color: tomato;
+}
+.nav-list li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: rgb(8, 36, 36) ;
+    transition: all 0.5s ease;
+}
+.nav-list li a:hover{
+    color:tomato ;
+    
+}
+.toggole{
+    display: none;
+}
+.toggole .toggole-list{
+    margin-bottom: 3px;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+}
+.social-icon img{
+    width: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px){
+    body{
+        
+    }
+    .nav{
+        flex-direction: column;
+        position: relative;
+    }
+    .toggole{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        cursor: pointer;
+        color: black;
+    }
+    .toggole .toggole-list{
+        background-color: black;
+    }
+    .nav-list {
+        display: none;
+        border-bottom: 1px solid white;
+    }
+    .nav-list li{
+        display: block;
+        border-bottom: 1px solid rgb(36, 33, 33);
+    }
+    .nav-list li a{
+        padding-bottom: 5px;
+    }
+
+    .nav .logo{
+        width: 100%;
+        margin-top: 7px;
+        margin-left: 20px;
+    }
+    .social-icon{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+  
+}
+
+
+/*---------navbar end---------*/
+/*--------------Home start------------*/
+
+
+.contact{
+    
+    width: 100%;
+    height: 100%;
+    background-image: url(png/Sp4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0 10px;
+}
+.contact .contact-tittle{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 30px;
+}
+.contact .contact-tittle h2{
+    color: white;
+    
+}
+.contact .contact-tittle p{
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.contact .contact-item{
+    width: 100%;
+    height: 70%;
+    display: flex;
+  
+}
+.contact .contact-item .contact-item1{
+    width: 50%;
+    
+}
+.contact .contact-item .contact-item1 .contact-infor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    
+}
+.contact .contact-item .contact-item1 .contact-infor .icon{
+    width: 40px;
+   background-color: white;
+   padding: 10px;
+   border-radius: 50%;
+   
+   display: flex;
+   justify-content: right;
+}
+.contact .contact-item .contact-item1 .contact-infor img{
+    width: 18px;
+    
+   
+}
+.contact .contact-item .contact-item1 .contact-infor .tittle{
+    width: 50%;
+    margin-left: 15px;
+    line-height: 1.1rem;
+}
+.contact .contact-item .contact-item1 .contact-infor h5{
+    color: tomato;
+}
+.contact .contact-item .contact-item1 .contact-infor p{
+    color: white;
+    font-size: 10px;
+   
+}
+.contact .contact-item .contact-item2{
+    width: 50%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+.contact .contact-item .contact-item2 .contact-item22{
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    padding: 30px;
+}
+.contact .contact-item .contact-item2 .contact-item22 .input input{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.contact .contact-item .contact-item2 .contact-item22 .input textarea{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    resize: none;
+    outline: none;
+}
+.contact .contact-item .contact-item2 .contact-item22 button{
+    margin-top: 10px;
+    padding:5px 14px;
+    border: none;
+    background-color: rgb(223, 70, 43);
+}
+.contact .contact-item .contact-item2 .contact-item22 button a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width:700px){
+    .contact{
+        width: 100%;
+        
+    }
+    .contact .contact-item{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .contact .contact-item .contact-item2 .contact-item22{
+        margin-top: 10px;
+    }
+}
+/*-----------main start-----------*/
+
+
+
+/*-----------main end-----------*/
+
+/*---------------footer start-----------*/
+
+.footer{
+    background-color: rgb(14, 1, 1);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    margin: 0 8px;
+    padding: 3.5rem;
+    justify-content: space-between;
+}
+.footer h3{
+    font-family: sans-serif;
+    font-weight: 666;
+}
+.footer p , span{
+    color: grey;
+    font-size: 14px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.footer-about{
+    width: 25%;
+   
+}
+.footer-about p{
+    margin-top:1rem;
+    font-size: 12px;
+ 
+} 
+.footer-newsletter{
+    width: 25%;
+    margin-left: 20px;
+}
+.footer-newsletter p{
+    margin-top: 1rem;
+    font-size: 12px;
+}
+.footer-newsletter .input input{
+    margin-top: 5px;
+    padding: 7px;
+    border: none;
+    background: rgb(39, 35, 35);
+    color: grey;
+}
+
+.footer-instagram{
+    width: 25%;
+}
+.footer-instagram .img{
+    margin-top: 1rem;
+}
+.footer-follow{
+    width: 25%;
+    margin-left: 20px;
+}
+
+
+
+.footer .footer-instagram .img img{
+    width: 50px;
+}
+
+
+.footer .footer-follow .icon img{
+    width: 20px;
+    margin-right: 3px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+
+@media screen and (max-width:700px){
+    .footer{
+       flex-direction: column;
+       width: 100%;
+       text-align: center;
+       margin-top: 10px;
+    }
+    .footer-instagram{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .footer-follow{
+        width: 100%;
+        margin-left:0;
+        margin-top: 10px;
+    }
+    .footer-about{
+        width: 100%;
+       
+    }
+    .footer-newsletter{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/*----------------footer end---------------*/

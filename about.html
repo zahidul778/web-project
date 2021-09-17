@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-----------google font-------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="about.css">
+
+    <!---------css for mobile---------->
+</head>
+<body>
+    <!---------navbar start---------->
+
+    <div class="navbar">
+        <div class="nav">
+            <div class="logo">
+               
+                <h2>My blog</h2>
+            </div>
+            <div class="nav-item">
+                <ul class="nav-list" id="navbar-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="post.html">post</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </div>
+            
+            <div class="toggole" id="toggole-btn">
+                <div class="toggole-list"></div>
+                <div class="toggole-list"></div>
+                <div class="toggole-list"></div>
+            </div>
+        </div>
+    </div>
+  <br>
+  
+    <!---------navbar End---------->
+
+   <!-----------about me start------------->
+
+
+    <div class="about">
+        <div class="about-img">
+            <img src="png/zahidul.jpeg" alt="">
+        </div>
+        <div class="about-tittle">
+            <div>
+                <h2>About Us</h2>
+           <p class="p">Web Designer</p>
+            <br>
+            <p>Hi! My name is Zahidul.Welcome to my personal page that I've designed to showcase my skills and espertise that I've accumulatd over the year. I've alse palaced all my social links at the left side, feel free to connect with me.I'd love to be giver the opportunity to hear from you.I like to call myself a passionate computer science learing.</p>
+            </div>
+            <div class="about-icon">
+                <a href="#">
+                    <img src="imgs/fb.png" alt="">
+                    
+                    <img class="last" src="imgs/tw.png" alt="">
+                    <img src="png/phone-call.png" alt="">
+                </a>
+            </div>
+        </div>
+   </div>
+
+   <br>
+   <!-----------about me end------------->
+   <div class="container">
+    <div class="container-skills">
+        <p>My Skills</p>
+        <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="bt">Bootstrap</li>
+            <li class="js">JS</li>
+            <li class="java">Java</li>
+            <li class="c">c++</li>
+        </ul>
+    </div>
+   </div>
+<!-----------------footer start----------->
+
+<section>
+    <div class="footer">
+        <div class="footer-about">
+            <h3>About us</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatum, libero molestiae voluptatibus consectetur eveniet cum, minima in debitis praesentium quis placeat? Modi, facere tenetur?</p>
+        </div>
+        <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            
+              <p>Stay upadate with our latest</p>
+             <div class="input">
+              <input type="text" placeholder="Email">
+             </div>
+            
+        </div>
+
+        <div class="footer-instagram">
+            <h3>Instagram</h3>
+            <div class="img">
+                <img src="imgs/Zia.jpg" alt="">
+                <img src="imgs/zinna.jpg" alt="">
+                <img src="imgs/Eusuf.jpg" alt="">
+                <img src="imgs/Mehedi.jpg" alt="">
+                <img src="imgs/sumon2.jpg" alt="">
+                <img src="imgs/Sumonbd.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="footer-follow">
+            <h3>Follow us </h3>
+            <div class="icon">
+                <p>Let us be Social</p>
+                <img src="imgs/fb.png" alt="">
+                <img src="imgs/tw.png" alt="">
+                <img src="png/imo.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-----------------------foooter end-------------->
+</body>
+
+<script>
+    const toggoleBtn = document.getElementById('toggole-btn');
+    const navList = document.getElementById('navbar-list');
+    toggoleBtn.addEventListener('click',() => {
+        navList.classList.toggle('active');
+    })
+</script>
+
+</html>

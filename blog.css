@@ -1,0 +1,451 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fff;
+}
+/*---------navbar start---------*/
+
+.navbar{
+    width: 100%;
+    height: 30px;
+    position: fixed;
+   z-index:2 ;
+   margin-top: 0;
+}
+.navbar .nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    z-index: 1;
+}
+.nav .logo{
+    cursor: pointer;
+}
+.nav .logo h2{
+    font-family: 'Satisfy', cursive;
+   text-transform: uppercase;
+    color: rgb(8, 36, 36);
+}
+.nav .logo h2::after{
+    content: '.';
+    color: tomato;
+}
+.nav-list li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: rgb(8, 36, 36) ;
+    transition: all 0.5s ease;
+}
+.nav-list li a:hover{
+    color:tomato ;
+    
+}
+.toggole{
+    display: none;
+}
+.toggole .toggole-list{
+    margin-bottom: 3px;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+}
+.social-icon img{
+    width: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px){
+    body{
+        
+    }
+    .nav{
+        flex-direction: column;
+        position: relative;
+    }
+    .toggole{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        cursor: pointer;
+        color: black;
+    }
+    .toggole .toggole-list{
+        background-color: black;
+    }
+    .nav-list {
+        display: none;
+        border-bottom: 1px solid white;
+    }
+    .nav-list li{
+        display: block;
+        border-bottom: 1px solid rgb(36, 33, 33);
+    }
+    .nav-list li a{
+        padding-bottom: 5px;
+    }
+
+    .nav .logo{
+        width: 100%;
+        margin-top: 7px;
+        margin-left: 20px;
+    }
+    .social-icon{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+  
+}
+
+
+/*---------navbar end---------*/
+
+/*-----------------blog start----------------*/
+
+.container-blog{
+    width: 100%;
+    height: 100%;
+}
+
+.container-blog .blog{
+    width: 100%;
+    height: 150px;
+    background-image: url(png/Sp3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   margin: 0 10px;
+}
+.container-blog .blog .tittle{
+    padding: 20px;
+}
+.container-blog .blog .tittle h4,h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.container-blog .blog .tittle h4{
+    color: #f48840;
+    text-transform: uppercase;
+}
+.container-blog .blog .tittle h1{
+    color: white;
+   
+    font-family: 'Satisfy', cursive;
+    
+    
+}
+
+
+
+/*------------------blog post------------*/
+.main{
+    max-width: 700px;
+    height: 100%;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   margin-top: 20px;
+ }
+ .main .main-left{
+    width: 70%;
+   
+    border: 1px solid rgb(204, 199, 199);
+ }
+ 
+ 
+ .main .main-left .img img{
+    width: 100%;
+   height: 200px;
+ }
+ .main .main-left .main-left-tittle{
+    padding: 15px;
+    line-height: 1.7rem;
+ }
+ .main .main-left .main-left-tittle .h3{
+    color: orange;
+ }
+ .main .main-left .main-left-tittle span{
+    color: grey;
+    font-size: x-small;
+    font-family: 'Montserrat', sans-serif;
+ 
+ }
+ .main .main-left .main-left-p{
+    padding: 20px 15px;
+    font-size: small;
+    line-height: 1.5rem;
+    color: grey;
+    font-family: 'Satisfy', cursive;
+    transition: 0.5s;
+    letter-spacing: normal;
+ }
+ .main .main-left .main-left-p:hover{
+    color: #f48840;
+ }
+ .main .main-left .main-left-icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+ }
+ .main .main-left .main-left-icon img{
+    width: 14px;
+    cursor: pointer;
+ }
+ .main .main-left .main-left-icon .share{
+    width: 30px;
+ }
+ hr{
+    color: rgb(231, 222, 222);
+    border-bottom: none;
+    width: 95%;
+    margin: 0 auto;
+    opacity: 0.2;
+    margin: 10px;
+ }
+ 
+ 
+ .main .main-left-btn{
+    padding-top: 15px;
+    
+ }
+ .main .main-left-btn button {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color: #f48840;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+ }
+ .main .main-left-btn  a{
+    text-decoration: none;
+    color: white;
+ }
+ 
+ .main .main-right{
+    width: 30%;
+    padding:0 15px;
+    background-color: #fff;
+ }
+ .main .main-right .input input{
+    padding: 5px;
+    width: 100%;
+    opacity: 0.7;
+   
+ }
+ .main .main-right .input ::placeholder{
+    color: grey;
+    font-size: smaller;
+ }
+ .main-right h2{
+    font-size: 14px;
+    margin-top: 15px;
+ }
+ .main .main-right .tittle p{
+    font-size: small;
+    font-weight: bold;
+    line-height: 1.3rem;
+    font-family: 'Satisfy', cursive;
+    transition: 0.5s;
+ }
+ .main .main-right .tittle p:hover{
+    color: #f48840;
+ }
+ .main .main-right .tittle span{
+    font-size: 10px;
+    padding-top: 8px;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+ }
+ 
+ 
+ .caregories .care h3{
+    text-transform: uppercase;
+    margin-top: 30px;
+ }
+ .caregories .care .care-1 li{
+    padding-top: 7px;
+    margin-left: 15px;
+ }
+ .caregories .care .care-1 li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+ }
+ .caregories .care .care-1 li a:hover{
+    color: #f48840;
+ }
+ .caregories .care .care-2{
+    margin-top: 5px;
+    
+ }
+ .caregories .care .care-2 button{
+    
+    padding: 5px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    color: grey;
+    letter-spacing: 2px;
+    transition: 0.4s;
+ } 
+ .caregories .care .care-2  button:hover{
+    background-color: #f48840;
+    color: white;
+ }
+ 
+ @media screen and (max-width:700px){
+    .main{
+        flex-direction: column;
+        width: 100%;
+    }
+    .main .main-left{
+        width: 100%;
+       
+        border: 1px solid rgb(204, 199, 199);
+    }
+    .main .main-right{
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+        padding:0 15px;
+        background-color: #fff;
+    }
+    .main .main-left-btn{
+        width: 90%;
+        margin: 0 auto;
+    }
+ }
+ 
+ /*-----------main end-----------*/
+/*-----------------blog end----------------*/
+
+
+/*---------------footer start-----------*/
+
+.footer{
+    background-color: rgb(8, 36, 36);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    margin: 0 8px;
+    padding: 3.5rem;
+    justify-content: space-between;
+}
+.footer h3{
+    font-family: sans-serif;
+    font-weight: 666;
+}
+.footer p , span{
+    color: grey;
+    font-size: 14px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.footer-about{
+    width: 25%;
+   
+}
+.footer-about p{
+    margin-top:1rem;
+    font-size: 12px;
+ 
+} 
+.footer-newsletter{
+    width: 25%;
+    margin-left: 20px;
+}
+.footer-newsletter p{
+    margin-top: 1rem;
+    font-size: 12px;
+}
+.footer-newsletter .input input{
+    margin-top: 5px;
+    padding: 7px;
+    border: none;
+    background: rgb(39, 35, 35);
+    color: grey;
+}
+
+.footer-instagram{
+    width: 25%;
+}
+.footer-instagram .img{
+    margin-top: 1rem;
+}
+.footer-follow{
+    width: 25%;
+    margin-left: 20px;
+}
+.footer-follow .icon{
+    margin-top: 1rem;
+    
+}
+
+
+.footer .footer-instagram .img img{
+    width: 50px;
+    margin-top: 10px;
+}
+.footer .footer-follow .icon{
+    padding-top: 8px;
+}
+
+.footer .footer-follow .icon img{
+    width: 20px;
+    margin-right: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width:700px){
+    .footer{
+       flex-direction: column;
+       width: 100%;
+       text-align: center;
+       margin-top: 10px;
+    }
+    .footer-instagram{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .footer-follow{
+        width: 100%;
+        margin-left:0;
+        margin-top: 10px;
+    }
+    .footer-about{
+        width: 100%;
+       
+    }
+    .footer-newsletter{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/*----------------footer end---------------*/
